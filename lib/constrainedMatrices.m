@@ -3,11 +3,7 @@ function [K, M, MGDL, N] = constrainedMatrices(...
 % Includes constrained dofs in matrices
 % =========================================================================
 % Child functions: 
-% Created by:      Víctor (11.2020) ; Modified by:      Ferran (2.2021)
-% =========================================================================
-% Versions:        1.0: (Víctor) Function implementation. 
-%                  1.1: (Ferran) Generalisation on the scope of the 
-%                                functions, comments and minor changes.
+% Created by:      Ferran (11.2020) ; Modified by:      Ferran (2.2021)
 % =========================================================================
 % INPUT:
 %   KFree       = Stiffnes matrix

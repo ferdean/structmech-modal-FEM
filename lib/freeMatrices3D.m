@@ -1,5 +1,4 @@
 function [M, K] = freeMatrices3D(mesh,elementType,E,v,rho,eta,DOF)
-%
 % Mass and stifness matrix computation (sparse output)
 % =========================================================================
 % Created by:   Ferran de Andrés(7.2021) 

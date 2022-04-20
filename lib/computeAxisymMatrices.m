@@ -1,8 +1,5 @@
 function [M, K, DOF, N, DOFfree] = computeAxisymMatrices(mesh,E,v,rho,eta,constrNodes,nodalDiam)
-% 
-% Eje de simetria: eje Y (el X es el radio)
-%
-%
+% Computes axisymmetric 2D matrices
 % =========================================================================
 % Created by:   Ferran de Andrés(5.2021) 
 % Version: 1.0. First implementation for continuous media (same density in

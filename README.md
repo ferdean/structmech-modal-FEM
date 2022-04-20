@@ -4,7 +4,9 @@ Linear FEM solver for structural mechanics applications. Solves a modal problem 
 
 Mass and stiffness matrices correspond to the force balance equation containing information of the N degrees of freedom of the system, this is 
 
-$$\mathbf{M U}+\mathbf{K U}=\mathbf{F}$$
+$$
+\mathbf{M U}+\mathbf{K U}=\mathbf{F}
+$$
 
 The current version includes: 
 

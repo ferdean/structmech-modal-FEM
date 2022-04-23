@@ -1,6 +1,8 @@
 # FEM modal solver (structural mechanics)
 
-Linear FEM solver for structural mechanics applications. Solves a modal problem on a given externally generated mesh, allowing multimaterial single-body domains.
+Linear FEM solver for structural mechanics applications. Solves a modal problem on a given externally generated mesh [1], allowing multimaterial single-body domains.
+
+[1] The mesh must be input as a MATLAB structure with two fields, an array containing the coordinates of the nodes and an array containing the topology of the mesh (i.e. which nodes form each of the elements). In the *test* folder you can find examples of the architecture of these structures. If you have any questions, do not hesitate to contact me at deandresvertferran(at)gmail(dot)com.
 
 Mass and stiffness matrices correspond to the force balance equation containing information of the N degrees of freedom of the system, this is 
 

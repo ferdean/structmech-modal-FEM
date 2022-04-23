@@ -24,15 +24,17 @@ addpath plots
 
 run materialdata.m
 
-load('mesh.mat');
+load('meshPlate.mat');
+% load('meshWheel.mat');
+
 fixednodes = [];     % Homogeneous dirichlet BC are set in these nodes
 
-plotMesh   = false;
+plotMesh   = true;
 
 if plotMesh   
     
     figure(1)
-    plotFEM3D(mesh.nodes_plot,mesh.top(1:4,:))
+    plotFEM3D(mesh.nodes.', mesh.top(1:4,:))
     hold on
 
     set(gca,'fontname','times')
@@ -63,8 +65,10 @@ tr             = 10;    % Number of natural frequencies extracted
 
 %% Natural mode representation
 %%% Representation parameters:
-mode        = 7;           % Mode number
-escaler     = 1;            
+mode        = 8;           % Mode number
+escaler     = 1e-2;        % [1e-4, 1]. If representation does not make sense,
+                           % try reducing the scaler.
+
 original    = true;        % Plot undeformed mesh 
 
 modefig = figure(2);
@@ -79,7 +83,7 @@ modeAnimate3D(mode, mesh, DOF, DOFfree, wnHz, real(phi), escaler, numberLoops, o
 
 %% Mode clasification
 
-nodeClasification(mesh.nodes, fixednodes, phi, wnHz)
+modeClasification(mesh.nodes, fixednodes, phi, wnHz)
 
 %% Nodal transformation
 

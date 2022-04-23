@@ -1,4 +1,9 @@
-function [] = nodeClasification(nodes, fixednodes, phi, wnHz)
+function [] = modeClasification(nodes, fixednodes, phi, wnHz)
+% Classification of he modes in terms of their components (axial, radial
+% and torsional). This is specific for the study of wheels/discs.
+% =========================================================================
+% Created by:      Ferran de Andrés (2.2021)
+% =========================================================================
 
 nodesConstrained   = nodes;
 nodesConstrained(fixednodes,:) = [];

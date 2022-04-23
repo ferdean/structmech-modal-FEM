@@ -19,6 +19,6 @@ The current version includes:
 ![example_mode_Wheel](https://user-images.githubusercontent.com/92535468/164887157-5175ffca-6b09-4fce-a824-41712d63ef33.png)
 
 * **Simple plate case:**
-* 
+
 ![example_mode_Plate](https://user-images.githubusercontent.com/92535468/164887158-10cd4958-8b0e-49a7-bc92-c11262909028.png)
 

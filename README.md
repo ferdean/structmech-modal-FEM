@@ -12,3 +12,11 @@ The current version includes:
 * *tests*, including meshes, geometries and material properties to serve as example of application. The example corresponds to a 3D model of a railway wheel manipulated with a viscoelastic layer constrained with an aluminum layer to reduce the surface mechanical vibration. 
 * *plots*, including some plotting examples.
 
+### Examples of mode representation: 
+
+* **Simple plate case:**
+![example_mode_Wheel](https://user-images.githubusercontent.com/92535468/164887157-5175ffca-6b09-4fce-a824-41712d63ef33.png)
+
+* **Railway wheel case:**
+![example_mode_Plate](https://user-images.githubusercontent.com/92535468/164887158-10cd4958-8b0e-49a7-bc92-c11262909028.png)
+

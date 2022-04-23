@@ -56,7 +56,7 @@ end
 verbose = false;         % Note: increases computation time
 [M, K, DOF, nDOF, DOFfree] = fastMatrices(mesh, E, v, rho, eta, fixednodes, verbose);
 
-% spy(M)
+% spy(K)
 
 %% Natural frequencies and modes 
 

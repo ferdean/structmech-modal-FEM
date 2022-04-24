@@ -1,4 +1,34 @@
 function varargout = FRF2D(Mq,Kq,DOF,nDOF,phi,nN,node_ex,node_rep)
+% Computes the frequency response function (FRF) in 2D given the modal
+% transformed mass and stiffness matrices of the system in the selected
+% observed/excited node.
+% TO DO:
+%    [x] Document the funciton
+%    [ ] Merge FRF.m and FRF2D.m as 1 single function with a flag
+%    indicating the dimensionality of the problem.
+% =========================================================================
+% Created by:   Ferran de Andrés (7.2021) 
+% =========================================================================
+% INPUT: 
+%   Mq        = Mass matrix after modal transformation (tr x tr)
+%   Kq        = Stiffness matrix after modal transformation (tr x tr)
+%   DOF       = Matrix of dof's considering constained nodes
+%               Size nn x Nn, with Nn nº dof's per node
+%   nDOF      = Number of active degrees of freedom
+%               Scalar.
+%   phi       = Modal amplitudes (vibration modes) scaled to unit mass
+%               Size N x tr
+%               Each column are modal amplitudes for one mode
+%               Each row contains model amplitude of dof with global id (in
+%               MGDL) equal to that row
+%   nN        = 2D vector containing the ID of the excited node (position 1) 
+%               and the observed node (position 2), such that
+%               nN = [number_of_exited_nodem, number_of_observed_node]
+%   node_i    = String specifying the direction (local) of exitation 
+%                 * 'axial'
+%                 * 'radial'
+%                 * 'torsional'
+% =========================================================================
 
 
 nN_ex       = nN(1);
